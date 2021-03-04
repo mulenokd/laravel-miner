@@ -1,0 +1,88 @@
+
+@font-face {
+  font-weight: 300;
+  font-family: "Avenir Next";
+  font-style: normal;
+  src: url("../fonts/AvenirNextCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Light.woff") format("woff"), url("../fonts/AvenirNextCyr-Light.ttf") format("truetype"), url("../fonts/AvenirNextCyr-Light.svg#AvenirNextCyr-Light") format("svg");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "Avenir Next";
+  font-style: normal;
+  src: local("Avenir Next LT Pro Regular"), local("AvenirNextLTPro-Regular");
+  src: url("../fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Regular.woff") format("woff");
+}
+@font-face {
+  font-weight: 500;
+  font-family: "Avenir Next";
+  font-style: normal;
+  src: local("Avenir Next LT Pro Medium"), local("AvenirNextLTPro-Medium");
+  src: url("../fonts/AvenirNextLTPro-Medium.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Medium.woff") format("woff");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Avenir Next";
+  font-style: normal;
+  src: local("Avenir Next LT Pro Demi"), local("AvenirNextLTPro-DemiBold");
+  src: url("../fonts/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Demi.woff") format("woff");
+}
+
+body{
+  font-family: 'Avenir Next';
+}
+.container{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.row{
+  display: flex;
+}
+.cell{
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  background-color: #e6e6e6;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cell:hover{
+  border-color: rgb(143, 143, 143);
+}
+.cell-1{
+  color: blue;
+}
+.cell-2{
+  color: green;
+}
+.cell-3{
+  color: red;
+}
+.cell-4{
+  color: darkslateblue;
+}
+.cell-5{
+  color: coral;
+}
+.cell-B{
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-size: cover;
+  background-image: url('/i/bomb.svg');
+}
+.cell.open{
+  background-color: rgb(218, 218, 218);
+}
+.flag{
+  display: block;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/i/flag.svg');
+}
