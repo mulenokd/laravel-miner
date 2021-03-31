@@ -3,10 +3,10 @@ namespace App\Classes;
 
 class Game 
 {
-    public $fieldWidth;
-    public $fieldHeight;
-    public $bombCount;
-    public $field = [];
+    public int $fieldWidth;
+    public int $fieldHeight;
+    public int $bombCount;
+    public array $field = [];
 
     public function __construct($width = 3, $height = 3, $bombCount = 3)
     {
